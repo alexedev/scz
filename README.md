@@ -8,5 +8,5 @@ to run it:
 3. `npm run dev`
 4. open http://localhost: 3000
 
-thanks to @nilan from  @graphcool for support
+thanks to @nilan from  @graphcool for kind support
 
