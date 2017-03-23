@@ -13,3 +13,13 @@ access source code from browser via https://scz-uovygiyvue.now.sh/_src
 
 thanks to @nilan from  @graphcool for kind support
 
+TODOS:
+- fix faculties "Show more" button (it is displayed even if there are no more faculties)
+- fix bug when in university edit mode inputs are not prefilled with current values
+- add specialisations list and submit form on Faculty page
+- add possibility to display universities/faculties logos
+- divide universities list in 3 columns, make them as media tiles (the same for faculties and specialisations)
+- add search
+- add filtering
+- nore to come
+
