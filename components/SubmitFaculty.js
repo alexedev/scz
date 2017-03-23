@@ -94,7 +94,7 @@ const createFaculty = gql`
 export default graphql(createFaculty, {
   props: ({ ownProps, mutate }) => ({
     createFaculty: (name, url, description, uniId) => mutate({
-      variables: { name, url, description, uniId: ownProps.uniId },
+      variables: { name, url, description, universityId: ownProps.uniId },
       updateQueries: {
         allFaculties: (previousResult, { mutationResult }) => {
           const newFaculty = mutationResult.data.createFaculty
