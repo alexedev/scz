@@ -8,8 +8,8 @@ to run it:
 3. `npm run dev`
 4. open http://localhost: 3000
 
-or you can check the current version deployed with `now`: https://scz-uovygiyvue.now.sh/
-access source code from browser via https://scz-uovygiyvue.now.sh/_src
+or you can check one of latest vesrions deployed with `now`: https://scz-wqpavtrkug.now.sh
+access source code from browser via https://scz-wqpavtrkug.now.sh/_src
 
 thanks to @nilan from  @graphcool for kind support
 
