@@ -1,0 +1,9 @@
+.DS_Store
+.env
+*.swp
+/node_modules
+build
+.idea
+logs
+*.log
+/.vscode
