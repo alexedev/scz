@@ -8,6 +8,5 @@ to run it:
 3. `npm run dev`
 4. open http://localhost: 3000
 
-adding Faculties works but they are not attached to unversities for now
- - this is why they are not shown in the lists. I will update README after fix.
+thanks to @nilan from  @graphcool for support
 
