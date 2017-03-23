@@ -74,11 +74,13 @@ const createFaculty = gql`
     $name: String!, 
     $url: String!, 
     $description: String, 
+    $universityId: ID!
     ) {
       createFaculty(
         name: $name, 
         url: $url, 
         description: $description, 
+        universityId: $universityId
         ) {
           id
           name
