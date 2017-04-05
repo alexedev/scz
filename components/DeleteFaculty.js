@@ -1,6 +1,5 @@
 import React from 'react'
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { gql, graphql } from 'react-apollo'
 import { allFaculties, POSTS_PER_PAGE } from './FacultiesList';
 
 function DeleteFaculty ({ handleDelete }) {

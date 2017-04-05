@@ -1,5 +1,4 @@
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { gql, graphql } from 'react-apollo'
 import FacultyPreview from '../components/FacultyPreview';
 
 const FacultiesList = ({ data: { allFaculties, loading, _allFacultiesMeta }, loadMore, uniId }) => {

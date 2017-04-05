@@ -6,8 +6,8 @@ import University from '../components/University'
 export default withData((props) => (
   <App>
     <Header pathname={props.url.pathname} />
-    <article>
+    <main>
       <University id={props.url.query.id}/>
-    </article>
+    </main>
   </App>
 ))

@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import gql from 'graphql-tag';
-import { graphql } from 'react-apollo';
+import { gql, graphql } from 'react-apollo'
 import Underscore from '../components/Underscore';
 import FacultyEditSaveButton from './FacultyEditSaveButton';
 

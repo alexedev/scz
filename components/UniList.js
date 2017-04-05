@@ -1,55 +1,61 @@
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { gql, graphql } from 'react-apollo'
 import UniversityPreview from '../components/UniversityPreview';
 
 const UniList = ({ data: { allUniversities, loading, _allUniversitiesMeta }, loadMore }) => {
-  if (loading) {
-    return <div>Loading</div>
-  }
-  const areMore = allUniversities.length < _allUniversitiesMeta.count
+  if (allUniversities && allUniversities.length) {
+    const areMore = allUniversities.length < _allUniversitiesMeta.count
 
-  return (
-    <section>
-      {allUniversities.map((uni) =>
-        <UniversityPreview
-          key={uni.id}
-          id={uni.id}
-          name={uni.name}
-          href={{ pathname: 'university', query: { id: uni.id } }}
-        />
-      )}
-      {areMore ? <button onClick={() => loadMore()}><span />Show More</button> : ''}
-      <style jsx>{`
-        section {
-          padding-bottom: 20px;
-        }
-        div {
-          align-items: center;
-          display: flex;
-        }
-        span {
-          font-size: 14px;
-          margin-right: 5px;
-        }
-        ul {
-          margin: 0;
-          padding: 0;
-        }
-        button {
-          margin: 0 auto;
-        }
-        button:before {
-          align-self: center;
-          border-style: solid;
-          border-width: 6px 4px 0 4px;
-          border-color: #ffffff transparent transparent transparent;
-          content: "";
-          height: 0;
-          width: 0;
-        }
-      `}</style>
-    </section>
-  )
+    return (
+      <section>
+      <div className="flex-grid-thirds">
+        {allUniversities.map((uni) =>
+          <UniversityPreview
+            key={uni.id}
+            id={uni.id}
+            name={uni.name}
+            href={{ pathname: 'university', query: { id: uni.id } }}
+          />
+        )}
+        </div>
+        <div>
+          {areMore ? <button onClick={() => loadMore()}> {loading ? 'Loading...' : 'Show More'} </button> : ''}
+        </div>
+        <style jsx>{`
+          section {
+            padding-bottom: 20px;
+          }
+          .flex-grid-thirds {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+          }
+          span {
+            font-size: 14px;
+            margin-right: 5px;
+          }
+          ul {
+            margin: 0;
+            padding: 0;
+          }
+          button {
+            margin: 0 auto;
+          }
+          button:before {
+            align-self: center;
+            border-style: solid;
+            border-width: 6px 4px 0 4px;
+            border-color: #ffffff transparent transparent transparent;
+            content: "";
+            height: 0;
+            width: 0;
+          }
+        `}</style>
+      </section>
+    )
+  }
+  return <div>Loading</div>
 }
 
 export const allUniversities = gql`

@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
-import gql from 'graphql-tag';
-import { graphql } from 'react-apollo';
+import { gql, graphql } from 'react-apollo';
 import Underscore from '../components/Underscore';
+import UnderscoreThin from '../components/UnderscoreThin';
 import EditSaveButton from './EditSaveButton';
 import FacultiesList from './FacultiesList';
 import SubmitFaculty from './SubmitFaculty'
@@ -86,7 +86,7 @@ class University extends Component {
             description={description}  
           />
         }
-        <Underscore />
+        <UnderscoreThin />
         <h2>Faculties</h2>
         <FacultiesList uniId={University.id} />
         <Underscore />

@@ -8,3 +8,4 @@ logs
 *.log
 /.vscode
 /.next
+**/yarn.lock

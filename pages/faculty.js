@@ -6,8 +6,8 @@ import Faculty from '../components/Faculty'
 export default withData((props) => (
   <App>
     <Header pathname={props.url.pathname} />
-    <article>
+    <main>
       <Faculty id={props.url.query.id} />
-    </article>
+    </main>
   </App>
 ))

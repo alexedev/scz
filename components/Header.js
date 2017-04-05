@@ -2,13 +2,12 @@ import Link from 'next/link'
 
 export default ({ pathname }) => (
   <header>
-  <div className="container">
-    <div className="col">
+    <div className="logo">
         <Link prefetch href='/'>
           <a><img src="/static/logo.svg" /></a>
         </Link>
     </div>
-    <div className="col">
+    <nav>
       <Link prefetch href='/services'>
         <a className={pathname === '/services' && 'is-active'}>SERVICES</a>
       </Link>
@@ -18,31 +17,42 @@ export default ({ pathname }) => (
       <Link prefetch href='/contact'>
         <a className={pathname === '/contact' && 'is-active'}>CONTACTS</a>
       </Link>
-    </div>
-    </div>
+    </nav>
   <style jsx>{`
       header {
-        margin-bottom: 25px;
+        padding: 10px;
+        flex: 1 100%;
+        display: flex;
+        flex-flow: row wrap;
       }
+      
+      nav {
+        padding: 10px;
+        flex: 1 100%;
+        display: flex;
+      }
+
+      .logo {
+        padding: 10px;
+        flex: 1 100%;
+      }
+
+      @media all and (min-width: 600px) {
+        .logo, nav { flex: 1 auto; }
+      }
+
       a {
         font-weight: 300;
         font-size: 24px;
-        margin-right: 30px;
         text-decoration: none;
         letter-spacing: 0.15em;
+        padding: 10px;
+        flex: 1 30%;
       }
-      .is-active {
+
+      a.is-active {
         font-weight: 500;
       }
-      .container {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-      }
-      .col {
-        flex: 1;
-      }
     `}</style>
-</header>
- 
+  </header>
 )

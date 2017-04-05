@@ -7,9 +7,9 @@ import withData from '../lib/withData'
 export default withData((props) => (
   <App>
     <Header pathname={props.url.pathname} />
-    <article>
+    <main>
       <h1>Contacts</h1>
       <Underscore />
-    </article>
+    </main>
   </App>
 ))

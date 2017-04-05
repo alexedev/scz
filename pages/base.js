@@ -3,15 +3,19 @@ import Header from '../components/Header'
 import withData from '../lib/withData'
 import UniList from '../components/UniList'
 import Submit from '../components/Submit'
+import Underscore from '../components/Underscore';
+import UnderscoreThin from '../components/UnderscoreThin';
 
 export default withData((props) => (
   <App>
     <Header pathname={props.url.pathname} />
-    <article>
+    <main>
       <h1>Unversities of Czech Republic</h1>
-      <div className="underscore"><img src="/static/underscore.svg" /></div>
+      <Underscore />
       <UniList />
+      <UnderscoreThin />
       <Submit />
+      <UnderscoreThin />
       <style jsx>{`
       .underscore {
         margin: 40px auto;
@@ -21,6 +25,6 @@ export default withData((props) => (
         display: block;
       }
     `}</style>
-    </article>
+    </main>
   </App>
 ))

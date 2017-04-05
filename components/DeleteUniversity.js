@@ -1,24 +1,24 @@
 import React from 'react'
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
-import { allUniversities, POSTS_PER_PAGE } from './UniList';
+import { gql, graphql } from 'react-apollo'
+import { allUniversities, POSTS_PER_PAGE } from './UniList'
 
 function DeleteUniversity ({ handleDelete }) {
   return (
-    <button onClick={handleDelete}>
-      &nbsp;
+    <span className="trash" onClick={handleDelete}>
+      <img src="/static/trash.svg" />
       <style jsx>{`
-        button {
-          float: right;
-          display: inline-block;
-          padding: 0;
+        .trash {
+          height: 10px;
+          margin: -10px auto 0 auto;
+          padding: 2px 8px;
           background-color: red;
+          cursor: pointer;
         }
         button:active {
           background-color: transparent;
         }
       `}</style>
-    </button>
+    </span>
   )
 }
 
