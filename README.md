@@ -8,8 +8,8 @@ to run it:
 3. `npm run dev`
 4. open http://localhost: 3000
 
-or you can check one of latest vesrions deployed with `now`: https://scz-qtzfrdyeff.now.sh
-access source code from browser via https://scz-qtzfrdyeff.now.sh/_src
+or you can check one of latest vesrions deployed with `now`: https://scz-mjfpzetupb.now.sh
+access source code from browser via https://scz-mjfpzetupb.now.sh/_src
 
 thanks to @nilan from  @graphcool for kind support
 
