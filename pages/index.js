@@ -8,7 +8,7 @@ export default withData((props) => (
   <App>
     <Header pathname={props.url.pathname} />
     <main>
-      <h1>Hello world</h1>
+      <h1>Main page</h1>
       <Underscore />
       <Link prefetch href='/base'>
         <a className="button">Go to catalog</a>

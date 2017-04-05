@@ -12,7 +12,7 @@ function DeleteUniversity ({ handleDelete }) {
           color: white;
           width: 10px;
           margin: -15px auto 20px auto;
-          padding: 1px 1px;
+          padding: 0px 1px 1px 1px;
           background-color: red;
           cursor: pointer;
         }

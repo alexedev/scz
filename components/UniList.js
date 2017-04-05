@@ -4,7 +4,7 @@ import UniversityPreview from '../components/UniversityPreview';
 const UniList = ({ data: { allUniversities, loading, _allUniversitiesMeta }, loadMore }) => {
   if (allUniversities && allUniversities.length) {
     const areMore = allUniversities.length < _allUniversitiesMeta.count
-
+    console.log(allUniversities.length, _allUniversitiesMeta.count)
     return (
       <section>
       <div className="flex-grid-thirds">
@@ -92,11 +92,11 @@ export default graphql(allUniversities, {
           skip: data.allUniversities.length
         },
         updateQuery: (previousResult, { fetchMoreResult }) => {
-          if (!fetchMoreResult.data) {
+          if (!fetchMoreResult.allUniversities) {
             return previousResult
           }
           return Object.assign({}, previousResult, {
-            allUniversities: [...previousResult.allUniversities, ...fetchMoreResult.data.allUniversities]
+            allUniversities: [...previousResult.allUniversities, ...fetchMoreResult.allUniversities]
           })
         }
       })
