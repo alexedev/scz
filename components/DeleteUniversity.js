@@ -36,13 +36,12 @@ export default graphql(deleteUniversity, {
   props: ({ ownProps, mutate }) => ({
     handleDelete: () => mutate({
       variables: { id: ownProps.id },
-      refetchQueries: [{
-        query: allUniversities,
-        variables: {
-          skip: 0,
-          first: POSTS_PER_PAGE
+      updateQueries: {
+        allUniversities: (prev, { mutationResult }) => {
+          const removedUniversity = mutationResult.data.deleteUniversity;
+          return { allUniversities: prev.allUniversities.filter(uni => uni.id !== removedUniversity.id)}   
         },
-      }],
+      },  
     })
   })
 })(DeleteUniversity)

@@ -23,7 +23,7 @@ export default ({name, href, id}) => (
       }
       .col {
         width: 30%;
-        margin: auto;
+        flex: 1 auto;
       }
       .preview:hover {
         box-shadow: 1px 1px 5px 0 rgba(142, 142, 142, 0.50);

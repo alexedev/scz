@@ -29,7 +29,7 @@ const UniList = ({ data: { allUniversities, loading, _allUniversitiesMeta }, loa
             margin: 0;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: space-around;
           }
           span {
             font-size: 14px;
