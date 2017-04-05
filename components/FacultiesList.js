@@ -18,7 +18,7 @@ const FacultiesList = ({ data: { allFaculties, loading, _allFacultiesMeta }, loa
           href={{ pathname: 'faculty', query: { id: faculty.id } }}
         />
       )}
-      {areMore ? <button onClick={() => loadMore()}><span />Show More</button> : ''}
+      {areMore ? <button className="button with-caret" onClick={() => loadMore()}><span />Show More</button> : ''}
       <style jsx>{`
         section {
           padding-bottom: 20px;

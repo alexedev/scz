@@ -89,7 +89,7 @@ class University extends Component {
         <UnderscoreThin />
         <h2>Faculties</h2>
         <FacultiesList uniId={University.id} />
-        <Underscore />
+        <UnderscoreThin />
         <SubmitFaculty uniId={University.id} />
 
         <style jsx>{`

@@ -18,7 +18,7 @@ const UniList = ({ data: { allUniversities, loading, _allUniversitiesMeta }, loa
         )}
         </div>
         <div>
-          {areMore ? <button onClick={() => loadMore()}> {loading ? 'Loading...' : 'Show More'} </button> : ''}
+          {areMore ? <button className="button with-caret" onClick={() => loadMore()}> {loading ? 'Loading...' : 'Show More'} </button> : ''}
         </div>
         <style jsx>{`
           section {
@@ -50,12 +50,13 @@ const UniList = ({ data: { allUniversities, loading, _allUniversitiesMeta }, loa
             content: "";
             height: 0;
             width: 0;
+            margin-right: 5px;
           }
         `}</style>
       </section>
     )
   }
-  return <div>Loading</div>
+  return <div>Add some</div>
 }
 
 export const allUniversities = gql`
@@ -74,7 +75,7 @@ export const allUniversities = gql`
   }
 `
 
-export const POSTS_PER_PAGE = 5
+export const POSTS_PER_PAGE = 6
 
 export default graphql(allUniversities, {
   options: {

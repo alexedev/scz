@@ -20,8 +20,10 @@ export default ({ children }) => (
       }
       .wrapper {
         display: flex;  
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         text-align: center;
+        min-height: 100vh;
+        align-items: center;
       }
       main, footer {
         padding: 10px;
@@ -135,14 +137,20 @@ export default ({ children }) => (
         font-size: 20px;
         line-height: 24px;
       }
-      button {
-        align-items: center;
+      button, .button {
+        flex: 1;
         background-color: #0178D9;
         border: 0;
         color: white;
-        display: flex;
         font-size: 16px;
         padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+      }
+      .button.with-caret {
+        align-items: center;
+        display: flex;
       }
       button:active {
         background-color: #1B9DB7;

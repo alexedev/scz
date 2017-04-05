@@ -33,7 +33,8 @@ const Submit = ({ createFaculty }) => {
         <input placeholder='name' name='name' />
         <input placeholder='url' name='url' />
         <textarea placeholder='description' name='description' />
-        <button type='submit'>Send</button>
+        <button className="submit" type='submit'>Send</button>
+
       </form>
       <style jsx>{` 
         form {
@@ -62,6 +63,9 @@ const Submit = ({ createFaculty }) => {
         input {
           display: block;
           margin-bottom: 10px;
+        }
+        .submit {
+          margin-top: 20px;
         }
       `}</style>
     </div>

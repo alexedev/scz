@@ -5,11 +5,13 @@ import { allUniversities, POSTS_PER_PAGE } from './UniList'
 function DeleteUniversity ({ handleDelete }) {
   return (
     <div className="trash" onClick={handleDelete}>
+      x
       <style jsx>{`
         .trash {
-          height: 5px;
-          width: 5px;
-          margin: 10px auto 20px auto;
+          font-size: 10px;
+          color: white;
+          width: 10px;
+          margin: -15px auto 20px auto;
           padding: 1px 1px;
           background-color: red;
           cursor: pointer;
