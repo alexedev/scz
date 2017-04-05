@@ -4,13 +4,13 @@ import { allUniversities, POSTS_PER_PAGE } from './UniList'
 
 function DeleteUniversity ({ handleDelete }) {
   return (
-    <span className="trash" onClick={handleDelete}>
-      <img src="/static/trash.svg" />
+    <div className="trash" onClick={handleDelete}>
       <style jsx>{`
         .trash {
-          height: 10px;
-          margin: -10px auto 0 auto;
-          padding: 2px 8px;
+          height: 5px;
+          width: 5px;
+          margin: 10px auto 20px auto;
+          padding: 1px 1px;
           background-color: red;
           cursor: pointer;
         }
@@ -18,7 +18,7 @@ function DeleteUniversity ({ handleDelete }) {
           background-color: transparent;
         }
       `}</style>
-    </span>
+    </div>
   )
 }
 

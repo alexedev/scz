@@ -6,9 +6,11 @@ export default ({name, href, id}) => (
     <Link prefetch href={href}>
       <div className="preview">
         <span className="preview__name">{name}</span>
+        
       </div>
     </Link>
-    {/*<DeleteUniversity id={id} /> */}
+    <DeleteUniversity id={id} />
+    
     <style jsx>{`
       .preview {
         border-radius: 4px;
