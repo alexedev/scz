@@ -22,10 +22,10 @@ export default ({ children }) => (
         display: flex;  
         flex-flow: row wrap;
         text-align: center;
-        > main, footer {
-          padding: 10px;
-          flex: 1 100%;
-        }
+      }
+      main, footer {
+        padding: 10px;
+        flex: 1 100%;
       }
       .Grid {
         display: flex;
