@@ -6,7 +6,7 @@ to run it:
 1. `git clone https://github.com/alexedev/scz.git myfolder`
 2. `cd myfolder && npm i`
 3. `npm run dev` or deploy with `now` and skip the net step 
-4. open http://localhost: 3000 
+4. open http://localhost:3000 
 
 or you can check one of latest versions deployed with `now`: https://scz-tscvowtzlw.now.sh (can be slightly behing current version)
 access source code from browser via https://scz-tscvowtzlw.now.sh/_src
