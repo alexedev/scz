@@ -4,7 +4,6 @@ import UniversityPreview from '../components/UniversityPreview';
 const UniList = ({ data: { allUniversities, loading, _allUniversitiesMeta }, loadMore }) => {
   if (allUniversities && allUniversities.length) {
     const areMore = allUniversities.length < _allUniversitiesMeta.count
-    console.log(allUniversities.length, _allUniversitiesMeta.count)
     return (
       <section>
       <div className="flex-grid-thirds">

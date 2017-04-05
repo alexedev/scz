@@ -36,7 +36,6 @@ class University extends Component {
     if (loading) {
       return <div>Loading</div>
     }
-    console.log(this.props.data);
     return (
       <section>
         <h1>
