@@ -18,7 +18,7 @@ Get additional information and link to the workshop video [here](https://www.gra
 
 ## Authors
 
-- Alex Alexeev ( [@alexedev](https://alexedev.github.com) ) – currently employed as a frontend React / Redux / REST dev at <a href="https://www.cngroup.dk"><img src="https://www.cngroup.dk/assets/cn-group-logo-5873b97a9c7585365c1d96330387fe97.svg" height="20" ></a>, moving in 2 months as a full-stack Next.js / React / Redux / GraphQL dev to <a href="https://kiwi.com/images/logos/kiwi-navbar.png"><img src="https://kiwi.com/images/logos/kiwi-navbar.png" height="20" ></a>.
+- Alex Alexeev ( [@alexedev](https://alexedev.github.com) ) – currently employed as a frontend React / Redux / REST dev at <a href="https://www.cngroup.dk"><img src="https://www.cngroup.dk/assets/cn-group-logo-5873b97a9c7585365c1d96330387fe97.svg" height="20" ></a>, moving in 2 months as a full-stack Next.js / React / Redux / GraphQL dev to <a href="https://kiwi.com"><img src="https://kiwi.com/images/logos/kiwi-navbar.png" height="20" ></a>.
 
 ## Thanks to:
 - [@_marktani](https://twitter.com/_marktani) from  [@graphcool](https://twitter.com/graphcool) for his kind support in GraphQL related issues
