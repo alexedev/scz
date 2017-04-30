@@ -1,5 +1,5 @@
 import { gql, graphql } from 'react-apollo'
-import UniversityPreview from '../components/UniversityPreview';
+import UniversityPreview from './UniversityPreview';
 
 const UniList = ({ data: { allUniversities, loading, _allUniversitiesMeta }, loadMore }) => {
   if (allUniversities && allUniversities.length) {

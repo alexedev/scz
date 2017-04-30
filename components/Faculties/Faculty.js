@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { gql, graphql } from 'react-apollo'
-import Underscore from '../components/Underscore';
+import Underscore from '../Underscore';
 import FacultyEditSaveButton from './FacultyEditSaveButton';
 
 class Faculty extends Component {
@@ -15,7 +15,13 @@ class Faculty extends Component {
     }
   }
   toggleEditMode = () => {
-    this.setState({ editMode: !this.state.editMode });
+    const { name, url, description } = this.props.data.Faculty;
+    this.setState({ 
+      editMode: !this.state.editMode,
+      name: name || '',
+      url: url || '',
+      description: description || '',
+    });
   }
   changeName = (e) => {
     this.setState({ name: e.target.value });
@@ -98,6 +104,7 @@ class Faculty extends Component {
           }
           .edit {
             text-align: center;
+            cursor: pointer;
           }
           span {
             font-size: 14px;

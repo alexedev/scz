@@ -1,5 +1,5 @@
 import { gql, graphql } from 'react-apollo'
-import FacultyPreview from '../components/FacultyPreview';
+import FacultyPreview from './FacultyPreview';
 
 const FacultiesList = ({ data: { allFaculties, loading, _allFacultiesMeta }, loadMore, uniId }) => {
   if (loading) {
@@ -8,7 +8,7 @@ const FacultiesList = ({ data: { allFaculties, loading, _allFacultiesMeta }, loa
   const areMore = allFaculties.length < _allFacultiesMeta.count
   return (
     <section>
-      {allFaculties.map((faculty) =>
+      {allFaculties && allFaculties.length ? allFaculties.map((faculty) =>
         <FacultyPreview
           key={faculty.id}
           id={faculty.id}
@@ -16,7 +16,7 @@ const FacultiesList = ({ data: { allFaculties, loading, _allFacultiesMeta }, loa
           name={faculty.name}
           href={{ pathname: 'faculty', query: { id: faculty.id } }}
         />
-      )}
+      ) : 'no faculties added yet'}
       {areMore ? <button className="button with-caret" onClick={() => loadMore()}><span />Show More</button> : ''}
       <style jsx>{`
         section {

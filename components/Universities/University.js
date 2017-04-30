@@ -1,10 +1,10 @@
 import React, {Component, PropTypes} from 'react';
 import { gql, graphql } from 'react-apollo';
-import Underscore from '../components/Underscore';
-import UnderscoreThin from '../components/UnderscoreThin';
+import Underscore from '../Underscore';
+import UnderscoreThin from '../UnderscoreThin';
 import EditSaveButton from './EditSaveButton';
-import FacultiesList from './FacultiesList';
-import SubmitFaculty from './SubmitFaculty'
+import FacultiesList from '../Faculties/FacultiesList';
+import SubmitFaculty from '../Faculties/SubmitFaculty'
 
 class University extends Component {
   constructor(props) {
@@ -116,6 +116,7 @@ class University extends Component {
           }
           .edit {
             text-align: center;
+            cursor: pointer;
           }
           span {
             font-size: 14px;

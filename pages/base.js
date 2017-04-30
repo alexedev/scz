@@ -1,8 +1,8 @@
 import App from '../components/App'
 import Header from '../components/Header'
 import withData from '../lib/withData'
-import UniList from '../components/UniList'
-import Submit from '../components/Submit'
+import UniList from '../components/Universities/UniList'
+import Submit from '../components/Universities/Submit'
 import Underscore from '../components/Underscore';
 import UnderscoreThin from '../components/UnderscoreThin';
 

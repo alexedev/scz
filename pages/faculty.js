@@ -1,7 +1,7 @@
 import App from '../components/App'
 import Header from '../components/Header'
 import withData from '../lib/withData'
-import Faculty from '../components/Faculty'
+import Faculty from '../components/Faculties/Faculty'
 
 export default withData((props) => (
   <App>
