@@ -10,6 +10,7 @@ export default withData((props) => (
     <main>
       <h1>Main page</h1>
       <Underscore />
+      <p>This page is not populated yet</p>
       <Link prefetch href='/base'>
         <a className="button">Go to catalog</a>
       </Link>

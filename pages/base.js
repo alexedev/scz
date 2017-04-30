@@ -10,7 +10,7 @@ export default withData((props) => (
   <App>
     <Header pathname={props.url.pathname} />
     <main>
-      <h1>Unversities of Czech Republic</h1>
+      <h1>All Unversities</h1>
       <Underscore />
       <UniList />
       <UnderscoreThin />
