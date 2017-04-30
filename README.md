@@ -14,7 +14,6 @@ access source code from browser via https://scz-tscvowtzlw.now.sh/_src
 thanks to @nilan from  @graphcool for kind support
 
 TODOS:
-- fix "Show more" button in faculties (it is displayed even if there are no more items)
 - fix bug when in university edit mode inputs are not prefilled with current values (happens on first pageload)
 - show validation errors in forms (name and url are required)
 - add horizontal spacing in universities list
