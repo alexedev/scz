@@ -1,6 +1,6 @@
 ## About
 
-This is universities catalog app made with love and hot technologies (NextJS / React / Apollo). I ( [@alexedev](https://alexedev.github.com) ) initially prepared it as a proof of concept for the internal workshop at <a href="https://www.cngroup.dk"><img src="https://www.cngroup.dk/assets/cn-group-logo-5873b97a9c7585365c1d96330387fe97.svg" height="20" ></a> but still continue to develop it a side project. Feel free to join me (check out the issues for possible contributions).
+This is universities catalog app made with love and hot technologies (NextJS / React / Apollo). Initially prepared by Alex ( [@alexedev](https://alexedev.github.com) ) as a demo app for the internal workshop at <a href="https://www.cngroup.dk"><img src="https://www.cngroup.dk/assets/cn-group-logo-5873b97a9c7585365c1d96330387fe97.svg" height="20" ></a>, its is still contines to be developed as a side project. Feel free to join (check out the issues for possible contributions) !
 
 Get additional information and link to the workshop video [here](https://www.graph.cool/forum/t/next-js-react-graphql-presentation-and-demo/90).
 
