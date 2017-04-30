@@ -6,7 +6,6 @@ const FacultiesList = ({ data: { allFaculties, loading, _allFacultiesMeta }, loa
     return <div>Loading</div>
   }
   const areMore = allFaculties.length < _allFacultiesMeta.count
-  console.log(allFaculties.length, _allFacultiesMeta.count, areMore);
   return (
     <section>
       {allFaculties.map((faculty) =>
