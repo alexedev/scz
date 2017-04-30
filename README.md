@@ -13,12 +13,4 @@ access source code from browser via https://scz-tscvowtzlw.now.sh/_src
 
 thanks to @nilan from  @graphcool for kind support
 
-TODOS:
-- add specialisations list and submit form on Faculty page
-- add horizontal spacing in universities list
-- add possibility to display universities/faculties logos
-- show validation errors in forms (name and url are required)
-- add search
-- add filtering
-- more to come
-
+TODOS: moved to issues
