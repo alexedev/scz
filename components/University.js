@@ -18,7 +18,14 @@ class University extends Component {
     }
   }
   toggleEditMode = () => {
-    this.setState({editMode: !this.state.editMode });
+    const { University } = this.props.data;
+    this.setState({
+      editMode: !this.state.editMode,
+      name: University.name || '',
+      url: University.url || '',
+      description: University.description || '',
+   });
+
   }
   changeName = (e) => {
     this.setState({ name: e.target.value });
@@ -29,13 +36,16 @@ class University extends Component {
   changeUrl = (e) => {
     this.setState({ url: e.target.value });
   }
+  
 
   render () {
     const { University, loading } = this.props.data;
     const { editMode, name, url, description } = this.state;
+    
     if (loading) {
       return <div>Loading</div>
     }
+    
     return (
       <section>
         <h1>
